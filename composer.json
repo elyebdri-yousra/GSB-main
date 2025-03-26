@@ -29,5 +29,8 @@
         "psr-4": {
             "Sources\\": "tests"
         }
+    },
+    "require": {
+        "larapack/dd": "^1.1"
     }
 }

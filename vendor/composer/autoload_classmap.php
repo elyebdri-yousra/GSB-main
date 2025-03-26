@@ -7,6 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'Modeles\\PdoGsb' => $baseDir . '/src/Modeles/PdoGsb.php',
-    'Outils\\Utilitaires' => $baseDir . '/resources/Outils/Utilitaires.php',
 );

@@ -1,5 +1,5 @@
 <div>
-    <form method="POST" action="index.php?uc=suivreFichesFrais&action=voirFiches">
+    <form method="POST" action="index.php?uc=validerFicheDesFrais&action=afficheFicheFrais">
         <div>
             <label for="name">Choisir le visiteur: </label>
             <select name="visiteur" id="name">

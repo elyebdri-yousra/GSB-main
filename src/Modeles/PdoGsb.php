@@ -172,6 +172,21 @@ class PdoGsb
         return $lesLignes;
     }
 
+    public function majLesFraisHorsForfait($id, $libelle, $montant, $date): void
+    {
+        $requetePrepare = $this->connexion->prepare(
+            'UPDATE lignefraishorsforfait '
+            . 'SET libelle = :libelle, date = :date, montant = :montant '
+            . 'WHERE lignefraishorsforfait.id = :id '
+        );
+        $date =Utilitaires::dateFrancaisVersAnglais($date);
+        $requetePrepare->bindParam(':libelle', $libelle, PDO::PARAM_STR);
+        $requetePrepare->bindParam(':montant', $montant, PDO::PARAM_STR);
+        $requetePrepare->bindParam(':id', $id, PDO::PARAM_INT);
+        $requetePrepare->bindParam(':date', $date, PDO::PARAM_STR);
+        $requetePrepare->execute();
+    }
+
     /**
      * Retourne le nombre de justificatif d'un visiteur pour un mois donné
      *
@@ -515,4 +530,6 @@ class PdoGsb
         $requetePrepare->bindParam(':unMois', $mois, PDO::PARAM_STR);
         $requetePrepare->execute();
     }
+
+
 }
