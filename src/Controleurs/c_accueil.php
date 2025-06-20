@@ -14,16 +14,16 @@
  * @version   GIT: <0>
  * @link      http://www.reseaucerta.org Contexte « Laboratoire GSB »
  */
-
-
 if ($estConnecte) {
-    if ($_SESSION['role'] == 1) {
-        include_once PATH_VIEWS . 'v_entete.php';
-        include PATH_VIEWS . 'comptable/v_accueil.php';
-    } else {
+    if ($_SESSION['role'] == "Visiteur") {
         include_once PATH_VIEWS . 'v_entete.php';
         include PATH_VIEWS . 'v_accueil.php';
     }
+    elseif($_SESSION['role'] == "Comptable"){
+        include_once PATH_VIEWS . 'v_entete.php';
+        include PATH_VIEWS_COMPTABLE . 'v_accueil_comptable.php';
+    }
+    
 } else {
     include PATH_VIEWS . 'v_connexion.php';
 }

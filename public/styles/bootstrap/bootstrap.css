@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -42,6 +43,9 @@ audio:not([controls]) {
 template {
   display: none;
 }
+
+
+
 a {
   background-color: transparent;
 }
@@ -3227,65 +3231,6 @@ fieldset[disabled] .btn-success.focus {
   color: #5cb85c;
   background-color: #fff;
 }
-
-.btn-secondary {
-  color: #fff;
-  background-color: #fd7e14;
-  border-color: #de7722;
-}
-.btn-secondary:focus,
-.btn-secondary.focus {
-  color: #fff;
-  background-color: #de7722;
-  border-color: #122b40;
-}
-.btn-secondary:hover {
-  color: #fff;
-  background-color: #de7722;
-  border-color: #de7722;
-}
-.btn-secondary:active,
-.btn-secondary.active,
-.open > .dropdown-toggle.btn-secondary {
-  color: #fff;
-  background-color: #de7722;
-  border-color: #de7722;
-}
-.btn-secondary:active:hover,
-.btn-secondary.active:hover,
-.open > .dropdown-toggle.btn-secondary:hover,
-.btn-secondary:active:focus,
-.btn-secondary.active:focus,
-.open > .dropdown-toggle.btn-secondary:focus,
-.btn-secondary:active.focus,
-.btn-secondary.active.focus,
-.open > .dropdown-toggle.btn-secondary.focus {
-  color: #fff;
-  background-color: #de7722;
-  border-color: #de7722;
-}
-.btn-secondary:active,
-.btn-secondary.active,
-.open > .dropdown-toggle.btn-secondary {
-  background-image: none;
-}
-.btn-secondary.disabled:hover,
-.btn-secondary[disabled]:hover,
-fieldset[disabled] .btn-secondary:hover,
-.btn-secondary.disabled:focus,
-.btn-secondary[disabled]:focus,
-fieldset[disabled] .btn-secondary:focus,
-.btn-secondary.disabled.focus,
-.btn-secondary[disabled].focus,
-fieldset[disabled] .btn-secondary.focus {
-  background-color: #de7722;
-  border-color: #de7722;
-}
-.btn-secondary .badge {
-  color: #de7722;
-  background-color: #fff;
-}
-
 .btn-info {
   color: #fff;
   background-color: #5bc0de;
@@ -4158,12 +4103,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #fff;
   background-color: #337ab7;
 }
-.nav-pills > li.active_comptable > a,
-.nav-pills > li.active_comptable > a:hover,
-.nav-pills > li.active_comptable > a:focus {
-  color: #fff;
-  background-color: #fd7e14;
-}
+
+
 .nav-stacked > li {
   float: none;
 }
@@ -4826,18 +4767,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #337ab7;
   border-color: #337ab7;
 }
-.pagination > .active_comptable > a,
-.pagination > .active_comptable > span,
-.pagination > .active_comptable > a:hover,
-.pagination > .active_comptable > span:hover,
-.pagination > .active_comptable > a:focus,
-.pagination > .active_comptable > span:focus {
-  z-index: 3;
-  color: #fff;
-  cursor: default;
-  background-color: #fd7e14;
-  border-color: #fd7e14;
-}
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
 .pagination > .disabled > span:focus,
@@ -5023,11 +4952,6 @@ a.badge:focus {
   color: #337ab7;
   background-color: #fff;
 }
-.list-group-item.active_comptable > .badge,
-.nav-pills > .active_comptable  > a > .badge {
-  color: #fd7e14;
-  background-color: #fff;
-}
 .list-group-item > .badge {
   float: right;
 }
@@ -5101,12 +5025,6 @@ a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #337ab7;
-}
-
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active_comptable {
-  border-color: #fd7e14;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -5440,16 +5358,6 @@ button.list-group-item-success.active:focus {
   background-color: #3c763d;
   border-color: #3c763d;
 }
-a.list-group-item-success.active_comptable,
-button.list-group-item-success.active_comptabl,
-a.list-group-item-success.active_comptabl:hover,
-button.list-group-item-success.active_comptabl:hover,
-a.list-group-item-success.active_comptabl:focus,
-button.list-group-item-success.active_comptabl:focus {
-  color: #fff;
-  background-color: #fd7e14;
-  border-color: #fd7e14;
-}
 .list-group-item-info {
   color: #31708f;
   background-color: #d9edf7;
@@ -5479,7 +5387,6 @@ button.list-group-item-info.active:focus {
   background-color: #31708f;
   border-color: #31708f;
 }
-
 .list-group-item-warning {
   color: #8a6d3b;
   background-color: #fcf8e3;
@@ -5816,24 +5723,6 @@ button.list-group-item-danger.active:focus {
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #337ab7;
-}
-.panel-secondery {
-  border-color: #fd7e14;
-}
-.panel-secondery > .panel-heading {
-  color: #fff;
-  background-color: #fd7e14;
-  border-color: #fd7e14;
-}
-.panel-secondery > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #fd7e14;
-}
-.panel-secondery > .panel-heading .badge {
-  color: #fd7e14;
-  background-color: #fd7e14;
-}
-.panel-secondery > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #fd7e14;
 }
 .panel-success {
   border-color: #d6e9c6;

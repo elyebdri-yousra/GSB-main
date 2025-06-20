@@ -17,6 +17,8 @@
 
 namespace Outils;
 
+use DateTime;
+
 abstract class Utilitaires
 {
     /**
@@ -35,7 +37,7 @@ abstract class Utilitaires
      * @param String $idVisiteur ID du visiteur
      * @param String $nom        Nom du visiteur
      * @param String $prenom     Prénom du visiteur
-     * @param Int $role          comptable ou non
+     * @param String $role       Id du role du visiteur
      *
      * @return null
      */
@@ -102,6 +104,15 @@ abstract class Utilitaires
         }
         return $annee . $mois;
     }
+
+    public static function getCurrentTimePlusOneMonth(){
+        $date = new DateTime('now');
+        $date->modify('+1 months');
+        $date = $date->format('d/m/Y');
+        
+        return $date;
+    }
+
 
     /* gestion des erreurs */
 
@@ -240,6 +251,21 @@ abstract class Utilitaires
     }
 
     /**
+     * Ajoute le libellé d'un succès au tableau des succès
+     *
+     * @param String $msg Libellé de l'erreur
+     *
+     * @return null
+     */
+    public static function ajouterSuccess($msg): void
+    {
+        if (!isset($_REQUEST['success'])) {
+            $_REQUEST['success'] = array();
+        }
+        $_REQUEST['success'][] = $msg;
+    }
+
+    /**
      * Retoune le nombre de lignes du tableau des erreurs
      *
      * @return Integer le nombre d'erreurs
@@ -253,12 +279,44 @@ abstract class Utilitaires
         }
     }
 
-
-    public static function transformDate(array $date){
-        for($i = 0; $i < count($date); $i++){
-            $pos = -2;
-            $date[$i]['date']= substr($date[$i]['date'], 0, $pos) . " / " . substr($date[$i]['date'], $pos);
+    /**
+     * Permet à partir d'array de fiche de frais de retourner un array trié.
+     * @param array Liste de fiche de frais "id-type"
+     * 
+     * @return array
+     */
+    public static function formatedArray(array $tab){
+        $final = [];
+        $temp = null;
+        for($i = 0; $i < count($tab); $i=$i+2){
+            $temp = array_splice($tab, 0,3);
+            $final[strtok(key($temp),'-')] = self::doSort($temp); 
         }
-        return $date;
+        return $final[strtok(key($temp),'-')];
+    }
+
+    private static function doSort(array $tab){
+        $f = [];
+        foreach($tab as $key => $value){
+            $f[explode('-',$key,2)[1]] = $value;
+        }
+        $f['id'] = explode('-',$key,2)[0];
+        return $f;
+    }
+
+
+    public static function checkHorsFrais(array $tab){
+        if(count($tab) != null){
+            foreach($tab as $t){
+                if(count($t) != 4){
+                    return true;
+                }
+                foreach($t as $a){
+                    if($a == null){
+                        return true;
+                    }
+                }
+            }
+        }return false;
     }
 }

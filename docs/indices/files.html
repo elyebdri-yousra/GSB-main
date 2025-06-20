@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-            <title>GSB</title>
+            <title>Documentation</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,12 +19,13 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
 <body id="top">
     <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">GSB</a></h1>
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
     <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
     <label class="phpdocumentor-header__menu-icon" for="menu-button">
         <i class="fas fa-bars"></i>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -69,6 +70,20 @@
     <ul class="phpdocumentor-list">
                     <li>
                 <a href="namespaces/composer-autoload.html" class="">Autoload</a>
+                
+            </li>
+            </ul>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/symfony.html" class="">Symfony</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/symfony-polyfill.html" class="">Polyfill</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/symfony-component.html" class="">Component</a>
                 
             </li>
             </ul>
@@ -99,71 +114,219 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    
-    <h2 class="phpdocumentor-content__title">Files</h2>
-                            <h3>A</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/vendor-autoload.html"><abbr title="vendor/autoload.php">autoload.php</abbr></a></li>
-                    <li><a href="files/vendor-composer-autoload-classmap.html"><abbr title="vendor/composer/autoload_classmap.php">autoload_classmap.php</abbr></a></li>
-                    <li><a href="files/vendor-composer-autoload-namespaces.html"><abbr title="vendor/composer/autoload_namespaces.php">autoload_namespaces.php</abbr></a></li>
-                    <li><a href="files/vendor-composer-autoload-psr4.html"><abbr title="vendor/composer/autoload_psr4.php">autoload_psr4.php</abbr></a></li>
-                    <li><a href="files/vendor-composer-autoload-real.html"><abbr title="vendor/composer/autoload_real.php">autoload_real.php</abbr></a></li>
-                    <li><a href="files/vendor-composer-autoload-static.html"><abbr title="vendor/composer/autoload_static.php">autoload_static.php</abbr></a></li>
-                </ul>
-                                    <h3>B</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/config-bdd.html"><abbr title="config/bdd.php">bdd.php</abbr></a></li>
-                </ul>
-                                    <h3>C</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/vendor-composer-classloader.html"><abbr title="vendor/composer/ClassLoader.php">ClassLoader.php</abbr></a></li>
-                    <li><a href="files/src-controleurs-c-accueil.html"><abbr title="src/Controleurs/c_accueil.php">c_accueil.php</abbr></a></li>
-                    <li><a href="files/src-controleurs-c-connexion.html"><abbr title="src/Controleurs/c_connexion.php">c_connexion.php</abbr></a></li>
-                    <li><a href="files/src-controleurs-c-deconnexion.html"><abbr title="src/Controleurs/c_deconnexion.php">c_deconnexion.php</abbr></a></li>
-                    <li><a href="files/src-controleurs-c-etatfrais.html"><abbr title="src/Controleurs/c_etatFrais.php">c_etatFrais.php</abbr></a></li>
-                    <li><a href="files/src-controleurs-c-gererfrais.html"><abbr title="src/Controleurs/c_gererFrais.php">c_gererFrais.php</abbr></a></li>
-                </ul>
-                                    <h3>D</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/config-define.html"><abbr title="config/define.php">define.php</abbr></a></li>
-                </ul>
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                        <section>
+        
+        <h2 class="phpdocumentor-content__title">Files</h2>
+                                            <h3>A</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-cloner-abstractcloner.html"><abbr title="vendor/symfony/var-dumper/Cloner/AbstractCloner.php">AbstractCloner.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-dumper-abstractdumper.html"><abbr title="vendor/symfony/var-dumper/Dumper/AbstractDumper.php">AbstractDumper.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-amqpcaster.html"><abbr title="vendor/symfony/var-dumper/Caster/AmqpCaster.php">AmqpCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-argsstub.html"><abbr title="vendor/symfony/var-dumper/Caster/ArgsStub.php">ArgsStub.php</abbr></a></li>
+                            <li><a href="files/vendor-autoload.html"><abbr title="vendor/autoload.php">autoload.php</abbr></a></li>
+                            <li><a href="files/vendor-composer-autoload-classmap.html"><abbr title="vendor/composer/autoload_classmap.php">autoload_classmap.php</abbr></a></li>
+                            <li><a href="files/vendor-composer-autoload-files.html"><abbr title="vendor/composer/autoload_files.php">autoload_files.php</abbr></a></li>
+                            <li><a href="files/vendor-composer-autoload-namespaces.html"><abbr title="vendor/composer/autoload_namespaces.php">autoload_namespaces.php</abbr></a></li>
+                            <li><a href="files/vendor-composer-autoload-psr4.html"><abbr title="vendor/composer/autoload_psr4.php">autoload_psr4.php</abbr></a></li>
+                            <li><a href="files/vendor-composer-autoload-real.html"><abbr title="vendor/composer/autoload_real.php">autoload_real.php</abbr></a></li>
+                            <li><a href="files/vendor-composer-autoload-static.html"><abbr title="vendor/composer/autoload_static.php">autoload_static.php</abbr></a></li>
+                        </ul>
+                                                        <h3>B</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/config-bdd.html"><abbr title="config/bdd.php">bdd.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-polyfill-mbstring-bootstrap.html"><abbr title="vendor/symfony/polyfill-mbstring/bootstrap.php">bootstrap.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-polyfill-mbstring-bootstrap80.html"><abbr title="vendor/symfony/polyfill-mbstring/bootstrap80.php">bootstrap80.php</abbr></a></li>
+                        </ul>
+                                                        <h3>C</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-caster.html"><abbr title="vendor/symfony/var-dumper/Caster/Caster.php">Caster.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-tutorial-cevicheone-regular.html"><abbr title="resources/Outils/fpdf/tutorial/CevicheOne-Regular.php">CevicheOne-Regular.php</abbr></a></li>
+                            <li><a href="files/vendor-composer-classloader.html"><abbr title="vendor/composer/ClassLoader.php">ClassLoader.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-classstub.html"><abbr title="vendor/symfony/var-dumper/Caster/ClassStub.php">ClassStub.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-dumper-contextprovider-clicontextprovider.html"><abbr title="vendor/symfony/var-dumper/Dumper/ContextProvider/CliContextProvider.php">CliContextProvider.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-command-descriptor-clidescriptor.html"><abbr title="vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php">CliDescriptor.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-dumper-clidumper.html"><abbr title="vendor/symfony/var-dumper/Dumper/CliDumper.php">CliDumper.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-cloner-clonerinterface.html"><abbr title="vendor/symfony/var-dumper/Cloner/ClonerInterface.php">ClonerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-server-connection.html"><abbr title="vendor/symfony/var-dumper/Server/Connection.php">Connection.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-conststub.html"><abbr title="vendor/symfony/var-dumper/Caster/ConstStub.php">ConstStub.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-dumper-contextprovider-contextproviderinterface.html"><abbr title="vendor/symfony/var-dumper/Dumper/ContextProvider/ContextProviderInterface.php">ContextProviderInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-dumper-contextualizeddumper.html"><abbr title="vendor/symfony/var-dumper/Dumper/ContextualizedDumper.php">ContextualizedDumper.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-cloner-cursor.html"><abbr title="vendor/symfony/var-dumper/Cloner/Cursor.php">Cursor.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-cutarraystub.html"><abbr title="vendor/symfony/var-dumper/Caster/CutArrayStub.php">CutArrayStub.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-cutstub.html"><abbr title="vendor/symfony/var-dumper/Caster/CutStub.php">CutStub.php</abbr></a></li>
+                            <li><a href="files/src-controleurs-c-accueil.html"><abbr title="src/Controleurs/c_accueil.php">c_accueil.php</abbr></a></li>
+                            <li><a href="files/src-controleurs-c-connexion.html"><abbr title="src/Controleurs/c_connexion.php">c_connexion.php</abbr></a></li>
+                            <li><a href="files/src-controleurs-c-deconnexion.html"><abbr title="src/Controleurs/c_deconnexion.php">c_deconnexion.php</abbr></a></li>
+                            <li><a href="files/src-controleurs-c-etatfrais.html"><abbr title="src/Controleurs/c_etatFrais.php">c_etatFrais.php</abbr></a></li>
+                            <li><a href="files/src-controleurs-c-genererpdf.html"><abbr title="src/Controleurs/c_genererpdf.php">c_genererpdf.php</abbr></a></li>
+                            <li><a href="files/src-controleurs-c-gererfrais.html"><abbr title="src/Controleurs/c_gererFrais.php">c_gererFrais.php</abbr></a></li>
+                            <li><a href="files/src-controleurs-c-suivrefichesfrais.html"><abbr title="src/Controleurs/c_suivreFichesFrais.php">c_suivreFichesFrais.php</abbr></a></li>
+                            <li><a href="files/src-controleurs-c-validerfrais.html"><abbr title="src/Controleurs/c_validerFrais.php">c_validerFrais.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-polyfill-mbstring-resources-unidata-casefolding.html"><abbr title="vendor/symfony/polyfill-mbstring/Resources/unidata/caseFolding.php">caseFolding.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-courier.html"><abbr title="resources/Outils/fpdf/font/courier.php">courier.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-courierb.html"><abbr title="resources/Outils/fpdf/font/courierb.php">courierb.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-courierbi.html"><abbr title="resources/Outils/fpdf/font/courierbi.php">courierbi.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-courieri.html"><abbr title="resources/Outils/fpdf/font/courieri.php">courieri.php</abbr></a></li>
+                        </ul>
+                                                        <h3>D</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-domcaster.html"><abbr title="vendor/symfony/var-dumper/Caster/DOMCaster.php">DOMCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-cloner-data.html"><abbr title="vendor/symfony/var-dumper/Cloner/Data.php">Data.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-dumper-datadumperinterface.html"><abbr title="vendor/symfony/var-dumper/Dumper/DataDumperInterface.php">DataDumperInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-datecaster.html"><abbr title="vendor/symfony/var-dumper/Caster/DateCaster.php">DateCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-doctrinecaster.html"><abbr title="vendor/symfony/var-dumper/Caster/DoctrineCaster.php">DoctrineCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-dscaster.html"><abbr title="vendor/symfony/var-dumper/Caster/DsCaster.php">DsCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-dspairstub.html"><abbr title="vendor/symfony/var-dumper/Caster/DsPairStub.php">DsPairStub.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-command-descriptor-dumpdescriptorinterface.html"><abbr title="vendor/symfony/var-dumper/Command/Descriptor/DumpDescriptorInterface.php">DumpDescriptorInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-server-dumpserver.html"><abbr title="vendor/symfony/var-dumper/Server/DumpServer.php">DumpServer.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-cloner-dumperinterface.html"><abbr title="vendor/symfony/var-dumper/Cloner/DumperInterface.php">DumperInterface.php</abbr></a></li>
+                            <li><a href="files/config-define.html"><abbr title="config/define.php">define.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-resources-functions-dump.html"><abbr title="vendor/symfony/var-dumper/Resources/functions/dump.php">dump.php</abbr></a></li>
+                        </ul>
+                                                        <h3>E</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-enumstub.html"><abbr title="vendor/symfony/var-dumper/Caster/EnumStub.php">EnumStub.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-exceptioncaster.html"><abbr title="vendor/symfony/var-dumper/Caster/ExceptionCaster.php">ExceptionCaster.php</abbr></a></li>
+                        </ul>
                                                         <h3>F</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/bin-gendatas-fonctions.html"><abbr title="bin/gendatas/fonctions.php">fonctions.php</abbr></a></li>
-                </ul>
-                                                                            <h3>I</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/vendor-composer-installedversions.html"><abbr title="vendor/composer/InstalledVersions.php">InstalledVersions.php</abbr></a></li>
-                    <li><a href="files/public-index.html"><abbr title="public/index.php">index.php</abbr></a></li>
-                    <li><a href="files/vendor-composer-installed.html"><abbr title="vendor/composer/installed.php">installed.php</abbr></a></li>
-                </ul>
-                                                                                                <h3>M</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/bin-gendatas-majgsb.html"><abbr title="bin/gendatas/majGSB.php">majGSB.php</abbr></a></li>
-                </ul>
-                                                                            <h3>P</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/src-modeles-pdogsb.html"><abbr title="src/Modeles/PdoGsb.php">PdoGsb.php</abbr></a></li>
-                </ul>
-                                                                                                                    <h3>U</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/resources-outils-utilitaires.html"><abbr title="resources/Outils/Utilitaires.php">Utilitaires.php</abbr></a></li>
-                </ul>
-                                    <h3>V</h3>
-        <ul class="phpdocumentor-list">
-                    <li><a href="files/src-vues-v-accueil.html"><abbr title="src/Vues/v_accueil.php">v_accueil.php</abbr></a></li>
-                    <li><a href="files/src-vues-v-connexion.html"><abbr title="src/Vues/v_connexion.php">v_connexion.php</abbr></a></li>
-                    <li><a href="files/src-vues-v-deconnexion.html"><abbr title="src/Vues/v_deconnexion.php">v_deconnexion.php</abbr></a></li>
-                    <li><a href="files/src-vues-v-entete.html"><abbr title="src/Vues/v_entete.php">v_entete.php</abbr></a></li>
-                    <li><a href="files/src-vues-v-erreurs.html"><abbr title="src/Vues/v_erreurs.php">v_erreurs.php</abbr></a></li>
-                    <li><a href="files/src-vues-v-etatfrais.html"><abbr title="src/Vues/v_etatFrais.php">v_etatFrais.php</abbr></a></li>
-                    <li><a href="files/src-vues-v-listefraisforfait.html"><abbr title="src/Vues/v_listeFraisForfait.php">v_listeFraisForfait.php</abbr></a></li>
-                    <li><a href="files/src-vues-v-listefraishorsforfait.html"><abbr title="src/Vues/v_listeFraisHorsForfait.php">v_listeFraisHorsForfait.php</abbr></a></li>
-                    <li><a href="files/src-vues-v-listemois.html"><abbr title="src/Vues/v_listeMois.php">v_listeMois.php</abbr></a></li>
-                    <li><a href="files/src-vues-v-pied.html"><abbr title="src/Vues/v_pied.php">v_pied.php</abbr></a></li>
-                </ul>
-                                                                                                            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-fficaster.html"><abbr title="vendor/symfony/var-dumper/Caster/FFICaster.php">FFICaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-fibercaster.html"><abbr title="vendor/symfony/var-dumper/Caster/FiberCaster.php">FiberCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-framestub.html"><abbr title="vendor/symfony/var-dumper/Caster/FrameStub.php">FrameStub.php</abbr></a></li>
+                            <li><a href="files/bin-gendatas-fonctions.html"><abbr title="bin/gendatas/fonctions.php">fonctions.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-fpdf.html"><abbr title="resources/Outils/fpdf/fpdf.php">fpdf.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-deprecation-contracts-function.html"><abbr title="vendor/symfony/deprecation-contracts/function.php">function.php</abbr></a></li>
+                        </ul>
+                                                        <h3>G</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-gmpcaster.html"><abbr title="vendor/symfony/var-dumper/Caster/GmpCaster.php">GmpCaster.php</abbr></a></li>
+                        </ul>
+                                                        <h3>H</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-command-descriptor-htmldescriptor.html"><abbr title="vendor/symfony/var-dumper/Command/Descriptor/HtmlDescriptor.php">HtmlDescriptor.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-dumper-htmldumper.html"><abbr title="vendor/symfony/var-dumper/Dumper/HtmlDumper.php">HtmlDumper.php</abbr></a></li>
+                            <li><a href="files/bin-hashpwd-hash-pwd.html"><abbr title="bin/hashpwd/hash_pwd.php">hash_pwd.php</abbr></a></li>
+                            <li><a href="files/vendor-larapack-dd-src-helper.html"><abbr title="vendor/larapack/dd/src/helper.php">helper.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-helvetica.html"><abbr title="resources/Outils/fpdf/font/helvetica.php">helvetica.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-helveticab.html"><abbr title="resources/Outils/fpdf/font/helveticab.php">helveticab.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-helveticabi.html"><abbr title="resources/Outils/fpdf/font/helveticabi.php">helveticabi.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-helveticai.html"><abbr title="resources/Outils/fpdf/font/helveticai.php">helveticai.php</abbr></a></li>
+                        </ul>
+                                                        <h3>I</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-imaginecaster.html"><abbr title="vendor/symfony/var-dumper/Caster/ImagineCaster.php">ImagineCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-imgstub.html"><abbr title="vendor/symfony/var-dumper/Caster/ImgStub.php">ImgStub.php</abbr></a></li>
+                            <li><a href="files/vendor-composer-installedversions.html"><abbr title="vendor/composer/InstalledVersions.php">InstalledVersions.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-intlcaster.html"><abbr title="vendor/symfony/var-dumper/Caster/IntlCaster.php">IntlCaster.php</abbr></a></li>
+                            <li><a href="files/public-index.html"><abbr title="public/index.php">index.php</abbr></a></li>
+                            <li><a href="files/vendor-composer-installed.html"><abbr title="vendor/composer/installed.php">installed.php</abbr></a></li>
+                        </ul>
+                                                                                                                        <h3>L</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-linkstub.html"><abbr title="vendor/symfony/var-dumper/Caster/LinkStub.php">LinkStub.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-polyfill-mbstring-resources-unidata-lowercase.html"><abbr title="vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php">lowerCase.php</abbr></a></li>
+                        </ul>
+                                                        <h3>M</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-polyfill-mbstring-mbstring.html"><abbr title="vendor/symfony/polyfill-mbstring/Mbstring.php">Mbstring.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-memcachedcaster.html"><abbr title="vendor/symfony/var-dumper/Caster/MemcachedCaster.php">MemcachedCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-mysqlicaster.html"><abbr title="vendor/symfony/var-dumper/Caster/MysqliCaster.php">MysqliCaster.php</abbr></a></li>
+                            <li><a href="files/bin-gendatas-majgsb.html"><abbr title="bin/gendatas/majGSB.php">majGSB.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-makefont-makefont.html"><abbr title="resources/Outils/fpdf/makefont/makefont.php">makefont.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-tutorial-makefont.html"><abbr title="resources/Outils/fpdf/tutorial/makefont.php">makefont.php</abbr></a></li>
+                        </ul>
+                                                                                                                        <h3>P</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/src-modeles-pdf.html"><abbr title="src/Modeles/PDF.php">PDF.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-pdocaster.html"><abbr title="vendor/symfony/var-dumper/Caster/PdoCaster.php">PdoCaster.php</abbr></a></li>
+                            <li><a href="files/src-modeles-pdogsb.html"><abbr title="src/Modeles/PdoGsb.php">PdoGsb.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-pgsqlcaster.html"><abbr title="vendor/symfony/var-dumper/Caster/PgSqlCaster.php">PgSqlCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-proxymanagercaster.html"><abbr title="vendor/symfony/var-dumper/Caster/ProxyManagerCaster.php">ProxyManagerCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-composer-platform-check.html"><abbr title="vendor/composer/platform_check.php">platform_check.php</abbr></a></li>
+                        </ul>
+                                                                                        <h3>R</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-rdkafkacaster.html"><abbr title="vendor/symfony/var-dumper/Caster/RdKafkaCaster.php">RdKafkaCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-rediscaster.html"><abbr title="vendor/symfony/var-dumper/Caster/RedisCaster.php">RedisCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-reflectioncaster.html"><abbr title="vendor/symfony/var-dumper/Caster/ReflectionCaster.php">ReflectionCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-dumper-contextprovider-requestcontextprovider.html"><abbr title="vendor/symfony/var-dumper/Dumper/ContextProvider/RequestContextProvider.php">RequestContextProvider.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-resourcecaster.html"><abbr title="vendor/symfony/var-dumper/Caster/ResourceCaster.php">ResourceCaster.php</abbr></a></li>
+                        </ul>
+                                                        <h3>S</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-scalarstub.html"><abbr title="vendor/symfony/var-dumper/Caster/ScalarStub.php">ScalarStub.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-command-serverdumpcommand.html"><abbr title="vendor/symfony/var-dumper/Command/ServerDumpCommand.php">ServerDumpCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-dumper-serverdumper.html"><abbr title="vendor/symfony/var-dumper/Dumper/ServerDumper.php">ServerDumper.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-dumper-contextprovider-sourcecontextprovider.html"><abbr title="vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php">SourceContextProvider.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-splcaster.html"><abbr title="vendor/symfony/var-dumper/Caster/SplCaster.php">SplCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-cloner-stub.html"><abbr title="vendor/symfony/var-dumper/Cloner/Stub.php">Stub.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-stubcaster.html"><abbr title="vendor/symfony/var-dumper/Caster/StubCaster.php">StubCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-symfonycaster.html"><abbr title="vendor/symfony/var-dumper/Caster/SymfonyCaster.php">SymfonyCaster.php</abbr></a></li>
+                            <li><a href="files/bin-hashpwd-seed-users.html"><abbr title="bin/hashpwd/seed_users.php">seed_users.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-symbol.html"><abbr title="resources/Outils/fpdf/font/symbol.php">symbol.php</abbr></a></li>
+                        </ul>
+                                                        <h3>T</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-exception-throwingcasterexception.html"><abbr title="vendor/symfony/var-dumper/Exception/ThrowingCasterException.php">ThrowingCasterException.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-tracestub.html"><abbr title="vendor/symfony/var-dumper/Caster/TraceStub.php">TraceStub.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-times.html"><abbr title="resources/Outils/fpdf/font/times.php">times.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-timesb.html"><abbr title="resources/Outils/fpdf/font/timesb.php">timesb.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-timesbi.html"><abbr title="resources/Outils/fpdf/font/timesbi.php">timesbi.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-font-timesi.html"><abbr title="resources/Outils/fpdf/font/timesi.php">timesi.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-polyfill-mbstring-resources-unidata-titlecaseregexp.html"><abbr title="vendor/symfony/polyfill-mbstring/Resources/unidata/titleCaseRegexp.php">titleCaseRegexp.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-makefont-ttfparser.html"><abbr title="resources/Outils/fpdf/makefont/ttfparser.php">ttfparser.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-tutorial-tuto1.html"><abbr title="resources/Outils/fpdf/tutorial/tuto1.php">tuto1.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-tutorial-tuto2.html"><abbr title="resources/Outils/fpdf/tutorial/tuto2.php">tuto2.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-tutorial-tuto3.html"><abbr title="resources/Outils/fpdf/tutorial/tuto3.php">tuto3.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-tutorial-tuto4.html"><abbr title="resources/Outils/fpdf/tutorial/tuto4.php">tuto4.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-tutorial-tuto5.html"><abbr title="resources/Outils/fpdf/tutorial/tuto5.php">tuto5.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-tutorial-tuto6.html"><abbr title="resources/Outils/fpdf/tutorial/tuto6.php">tuto6.php</abbr></a></li>
+                            <li><a href="files/resources-outils-fpdf-tutorial-tuto7.html"><abbr title="resources/Outils/fpdf/tutorial/tuto7.php">tuto7.php</abbr></a></li>
+                        </ul>
+                                                        <h3>U</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-uninitializedstub.html"><abbr title="vendor/symfony/var-dumper/Caster/UninitializedStub.php">UninitializedStub.php</abbr></a></li>
+                            <li><a href="files/resources-outils-utilitaires.html"><abbr title="resources/Outils/Utilitaires.php">Utilitaires.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-uuidcaster.html"><abbr title="vendor/symfony/var-dumper/Caster/UuidCaster.php">UuidCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-polyfill-mbstring-resources-unidata-uppercase.html"><abbr title="vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php">upperCase.php</abbr></a></li>
+                        </ul>
+                                                        <h3>V</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-cloner-varcloner.html"><abbr title="vendor/symfony/var-dumper/Cloner/VarCloner.php">VarCloner.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-vardumper.html"><abbr title="vendor/symfony/var-dumper/VarDumper.php">VarDumper.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-test-vardumpertesttrait.html"><abbr title="vendor/symfony/var-dumper/Test/VarDumperTestTrait.php">VarDumperTestTrait.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-accueil.html"><abbr title="src/Vues/v_accueil.php">v_accueil.php</abbr></a></li>
+                            <li><a href="files/src-vues-comptable-v-accueil-comptable.html"><abbr title="src/Vues/comptable/v_accueil_comptable.php">v_accueil_comptable.php</abbr></a></li>
+                            <li><a href="files/src-vues-comptable-v-affichefraisforfait.html"><abbr title="src/Vues/comptable/v_afficheFraisForfait.php">v_afficheFraisForfait.php</abbr></a></li>
+                            <li><a href="files/src-vues-comptable-v-affichefraishorsforfait.html"><abbr title="src/Vues/comptable/v_afficheFraisHorsForfait.php">v_afficheFraisHorsForfait.php</abbr></a></li>
+                            <li><a href="files/src-vues-comptable-v-choixclient.html"><abbr title="src/Vues/comptable/v_choixClient.php">v_choixClient.php</abbr></a></li>
+                            <li><a href="files/src-vues-comptable-v-choixclientdate.html"><abbr title="src/Vues/comptable/v_choixClientDate.php">v_choixClientDate.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-connexion.html"><abbr title="src/Vues/v_connexion.php">v_connexion.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-deconnexion.html"><abbr title="src/Vues/v_deconnexion.php">v_deconnexion.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-entete.html"><abbr title="src/Vues/v_entete.php">v_entete.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-erreurs.html"><abbr title="src/Vues/v_erreurs.php">v_erreurs.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-etatfrais.html"><abbr title="src/Vues/v_etatFrais.php">v_etatFrais.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-listefraisforfait.html"><abbr title="src/Vues/v_listeFraisForfait.php">v_listeFraisForfait.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-listefraishorsforfait.html"><abbr title="src/Vues/v_listeFraisHorsForfait.php">v_listeFraisHorsForfait.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-listemois.html"><abbr title="src/Vues/v_listeMois.php">v_listeMois.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-pied.html"><abbr title="src/Vues/v_pied.php">v_pied.php</abbr></a></li>
+                            <li><a href="files/src-vues-v-success.html"><abbr title="src/Vues/v_success.php">v_success.php</abbr></a></li>
+                            <li><a href="files/src-vues-comptable-v-suivreficheclient.html"><abbr title="src/Vues/comptable/v_suivreFicheClient.php">v_suivreFicheClient.php</abbr></a></li>
+                            <li><a href="files/src-vues-comptable-v-suivrefichesclient.html"><abbr title="src/Vues/comptable/v_suivreFichesClient.php">v_suivreFichesClient.php</abbr></a></li>
+                        </ul>
+                                                                                        <h3>X</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-symfony-var-dumper-caster-xmlreadercaster.html"><abbr title="vendor/symfony/var-dumper/Caster/XmlReaderCaster.php">XmlReaderCaster.php</abbr></a></li>
+                            <li><a href="files/vendor-symfony-var-dumper-caster-xmlresourcecaster.html"><abbr title="vendor/symfony/var-dumper/Caster/XmlResourceCaster.php">XmlResourceCaster.php</abbr></a></li>
+                        </ul>
+                                                                                        <h3>Z</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/resources-outils-fpdf-font-zapfdingbats.html"><abbr title="resources/Outils/fpdf/font/zapfdingbats.php">zapfdingbats.php</abbr></a></li>
+                        </ul>
+                        </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -174,7 +337,6 @@
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="indices/files.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

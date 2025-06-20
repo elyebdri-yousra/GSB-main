@@ -14,7 +14,6 @@
  * @version   GIT: <0>
  * @link      http://www.reseaucerta.org Contexte « Laboratoire GSB »
  */
-
 use Modeles\PdoGsb;
 use Outils\Utilitaires;
 
@@ -26,7 +25,7 @@ session_start();
 $pdo = PdoGsb::getPdoGsb();
 $estConnecte = Utilitaires::estConnecte();
 
-require PATH_VIEWS . 'v_entete.php';
+require PATH_VIEWS . "v_entete.php";
 
 $uc = filter_input(INPUT_GET, 'uc', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
@@ -49,12 +48,19 @@ switch ($uc) {
     case 'etatFrais':
         include PATH_CTRLS . 'c_etatFrais.php';
         break;
-    case 'validerFicheDesFrais':
-        include PATH_CTRLS . 'c_validerFicheDesFrais.php';
+    case 'validerFrais':
+        include PATH_CTRLS . 'c_validerFrais.php';
         break;
     case 'deconnexion':
         include PATH_CTRLS . 'c_deconnexion.php';
         break;
+    case 'suivreFichesFrais':
+        include PATH_CTRLS . 'c_suivreFichesFrais.php';
+        break;
+    // En gros tu copis colle ceux du dessus, donc si je veux créer un controller qui s'appel testpourtester je fais
+    //case 'testpourtester': // Ca c'est le uc dans l'url -> doit être similaire au nom du controller
+    //    include PATH_CTRLS . 'c_suivreFichesFrais.php'; // Penser à créer le fichier dans le dossier controller donc c_testpourteset.php
+    //    break; // Obligatoire quand case 
     default:
         Utilitaires::ajouterErreur('Page non trouvée, veuillez vérifier votre lien...');
         include PATH_VIEWS . 'v_erreurs.php';

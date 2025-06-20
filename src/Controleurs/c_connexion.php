@@ -30,10 +30,8 @@ switch ($action) {
         $login = filter_input(INPUT_POST, 'login', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
         $mdp = filter_input(INPUT_POST, 'mdp', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
         $visiteur = $pdo->getInfosVisiteur($login);
-        $mdpVisiteur = $pdo->getMdpVisiteur($login); // ['mdp' => 'motDePasse'];
-        // password_verify('secret','secret') -> OK / password_verify('secret', ['mdp' => 'secret'] KO ) 
         if ($visiteur) {
-            if(!password_verify($mdp, $mdpVisiteur['mdp'])){
+            if (!password_verify($mdp, $pdo->getMdpVisiteur($login))) {
                 Utilitaires::ajouterErreur('Login ou mot de passe incorrect');
                 include PATH_VIEWS . 'v_erreurs.php';
                 include PATH_VIEWS . 'v_connexion.php';
@@ -45,10 +43,10 @@ switch ($action) {
                 Utilitaires::connecter($id, $nom, $prenom, $role);
                 header('Location: index.php');
             }
-        }else{
+        } else {
             Utilitaires::ajouterErreur('Login ou mot de passe incorrect');
-                include PATH_VIEWS . 'v_erreurs.php';
-                include PATH_VIEWS . 'v_connexion.php';
+            include PATH_VIEWS . 'v_erreurs.php';
+            include PATH_VIEWS . 'v_connexion.php';
         }
         break;
     default:

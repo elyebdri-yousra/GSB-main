@@ -28,6 +28,17 @@ switch ($action) {
             $pdo->creeNouvellesLignesFrais($idVisiteur, $mois);
         }
         break;
+    case 'updateVehicule':
+        $idVehicule = filter_input(INPUT_POST, 'fraiskm', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+        if($idVehicule){
+            $pdo->updateVehiculeUser($idVisiteur,$idVehicule);
+            Utilitaires::ajouterSuccess('Valeur mise à jour');
+            include PATH_VIEWS . 'v_success.php';
+        }else{
+            Utilitaires::ajouterErreur('Choisir une valeur pour le véhicule');
+            include PATH_VIEWS . 'v_erreurs.php';
+        }
+        break;
     case 'validerMajFraisForfait':
         $lesFrais = filter_input(INPUT_POST, 'lesFrais', FILTER_DEFAULT, FILTER_FORCE_ARRAY);
         if (Utilitaires::lesQteFraisValides($lesFrais)) {
@@ -55,6 +66,8 @@ switch ($action) {
         $pdo->supprimerFraisHorsForfait($idFrais);
         break;
 }
+$vehicule = $pdo->getListeVehicule();
+$vehicule_user = $pdo->getFraisVehiculeUser($idVisiteur);
 $lesFraisHorsForfait = $pdo->getLesFraisHorsForfait($idVisiteur, $mois);
 $lesFraisForfait = $pdo->getLesFraisForfait($idVisiteur, $mois);
 require PATH_VIEWS . 'v_listeFraisForfait.php';

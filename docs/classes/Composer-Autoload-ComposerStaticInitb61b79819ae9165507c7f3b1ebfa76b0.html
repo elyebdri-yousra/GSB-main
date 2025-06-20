@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-            <title>GSB</title>
+            <title>Documentation</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,12 +19,13 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
 <body id="top">
     <header class="phpdocumentor-header phpdocumentor-section">
-    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">GSB</a></h1>
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
     <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
     <label class="phpdocumentor-header__menu-icon" for="menu-button">
         <i class="fas fa-bars"></i>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -69,6 +70,20 @@
     <ul class="phpdocumentor-list">
                     <li>
                 <a href="namespaces/composer-autoload.html" class="">Autoload</a>
+                
+            </li>
+            </ul>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/symfony.html" class="">Symfony</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/symfony-polyfill.html" class="">Polyfill</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/symfony-component.html" class="">Component</a>
                 
             </li>
             </ul>
@@ -99,8 +114,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/composer.html">Composer</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/composer-autoload.html">Autoload</a></li>
     </ul>
@@ -120,6 +136,11 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="vendor/composer/autoload_static.php"><a href="files/vendor-composer-autoload-static.html"><abbr title="vendor/composer/autoload_static.php">autoload_static.php</abbr></a></abbr>
     :
@@ -128,10 +149,6 @@
     </aside>
 
         
-    <section class="phpdocumentor-description"></section>
-
-
-
 
 
 
@@ -139,39 +156,64 @@
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_classMap">$classMap</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_files">$files</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_prefixDirsPsr4">$prefixDirsPsr4</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_prefixLengthsPsr4">$prefixLengthsPsr4</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#method_getInitializer">getInitializer()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -182,6 +224,7 @@
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -193,13 +236,14 @@
     <h4 class="phpdocumentor-element__name" id="property_classMap">
         $classMap
         <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_classMap" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="vendor/composer/autoload_static.php"><a href="files/vendor-composer-autoload-static.html"><abbr title="vendor/composer/autoload_static.php">autoload_static.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -208,12 +252,10 @@
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$classMap</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;Composer\\InstalledVersions&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/composer/InstalledVersions.php&#039;)</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;Composer\\InstalledVersions&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/composer/InstalledVersions.php&#039;, &#039;Modeles\\PDF&#039; =&gt; __DIR__ . &#039;/../..&#039; . &#039;/src/Modeles/PDF.php&#039;, &#039;Modeles\\PdoGsb&#039; =&gt; __DIR__ . &#039;/../..&#039; . &#039;/src/Modeles/PdoGsb.php&#039;, &#039;Outils\\Utilitaires&#039; =&gt; __DIR__ . &#039;/../..&#039; . &#039;/resources/Outils/Utilitaires.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\AmqpCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/AmqpCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\ArgsStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/ArgsStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\Caster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/Caster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\ClassStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/ClassStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\ConstStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/ConstStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\CutArrayStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/CutArrayStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\CutStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/CutStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\DOMCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/DOMCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\DateCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/DateCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\DoctrineCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/DoctrineCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\DsCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/DsCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\DsPairStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/DsPairStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\EnumStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/EnumStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\ExceptionCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/ExceptionCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\FFICaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/FFICaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\FiberCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/FiberCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\FrameStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/FrameStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\GmpCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/GmpCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\ImagineCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/ImagineCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\ImgStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/ImgStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\IntlCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/IntlCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\LinkStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/LinkStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\MemcachedCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/MemcachedCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\MysqliCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/MysqliCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\PdoCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/PdoCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\PgSqlCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/PgSqlCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\ProxyManagerCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/ProxyManagerCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\RdKafkaCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/RdKafkaCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\RedisCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/RedisCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\ReflectionCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/ReflectionCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\ResourceCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/ResourceCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\ScalarStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/ScalarStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\SplCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/SplCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\StubCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/StubCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\SymfonyCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/SymfonyCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\TraceStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/TraceStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\UninitializedStub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/UninitializedStub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\UuidCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/UuidCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\XmlReaderCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/XmlReaderCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Caster\\XmlResourceCaster&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Caster/XmlResourceCaster.php&#039;, &#039;Symfony\\Component\\VarDumper\\Cloner\\AbstractCloner&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Cloner/AbstractCloner.php&#039;, &#039;Symfony\\Component\\VarDumper\\Cloner\\ClonerInterface&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Cloner/ClonerInterface.php&#039;, &#039;Symfony\\Component\\VarDumper\\Cloner\\Cursor&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Cloner/Cursor.php&#039;, &#039;Symfony\\Component\\VarDumper\\Cloner\\Data&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Cloner/Data.php&#039;, &#039;Symfony\\Component\\VarDumper\\Cloner\\DumperInterface&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Cloner/DumperInterface.php&#039;, &#039;Symfony\\Component\\VarDumper\\Cloner\\Stub&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Cloner/Stub.php&#039;, &#039;Symfony\\Component\\VarDumper\\Cloner\\VarCloner&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Cloner/VarCloner.php&#039;, &#039;Symfony\\Component\\VarDumper\\Command\\Descriptor\\CliDescriptor&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Command/Descriptor/CliDescriptor.php&#039;, &#039;Symfony\\Component\\VarDumper\\Command\\Descriptor\\DumpDescriptorInterface&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Command/Descriptor/DumpDescriptorInterface.php&#039;, &#039;Symfony\\Component\\VarDumper\\Command\\Descriptor\\HtmlDescriptor&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Command/Descriptor/HtmlDescriptor.php&#039;, &#039;Symfony\\Component\\VarDumper\\Command\\ServerDumpCommand&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Command/ServerDumpCommand.php&#039;, &#039;Symfony\\Component\\VarDumper\\Dumper\\AbstractDumper&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Dumper/AbstractDumper.php&#039;, &#039;Symfony\\Component\\VarDumper\\Dumper\\CliDumper&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Dumper/CliDumper.php&#039;, &#039;Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\CliContextProvider&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Dumper/ContextProvider/CliContextProvider.php&#039;, &#039;Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\ContextProviderInterface&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Dumper/ContextProvider/ContextProviderInterface.php&#039;, &#039;Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\RequestContextProvider&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Dumper/ContextProvider/RequestContextProvider.php&#039;, &#039;Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\SourceContextProvider&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php&#039;, &#039;Symfony\\Component\\VarDumper\\Dumper\\ContextualizedDumper&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Dumper/ContextualizedDumper.php&#039;, &#039;Symfony\\Component\\VarDumper\\Dumper\\DataDumperInterface&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Dumper/DataDumperInterface.php&#039;, &#039;Symfony\\Component\\VarDumper\\Dumper\\HtmlDumper&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Dumper/HtmlDumper.php&#039;, &#039;Symfony\\Component\\VarDumper\\Dumper\\ServerDumper&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Dumper/ServerDumper.php&#039;, &#039;Symfony\\Component\\VarDumper\\Exception\\ThrowingCasterException&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Exception/ThrowingCasterException.php&#039;, &#039;Symfony\\Component\\VarDumper\\Server\\Connection&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Server/Connection.php&#039;, &#039;Symfony\\Component\\VarDumper\\Server\\DumpServer&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Server/DumpServer.php&#039;, &#039;Symfony\\Component\\VarDumper\\Test\\VarDumperTestTrait&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Test/VarDumperTestTrait.php&#039;, &#039;Symfony\\Component\\VarDumper\\VarDumper&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/VarDumper.php&#039;, &#039;Symfony\\Polyfill\\Mbstring\\Mbstring&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/polyfill-mbstring/Mbstring.php&#039;)</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -224,43 +266,10 @@
             -public
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property_prefixDirsPsr4">
-        $prefixDirsPsr4
-        <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_prefixDirsPsr4" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="vendor/composer/autoload_static.php"><a href="files/vendor-composer-autoload-static.html"><abbr title="vendor/composer/autoload_static.php">autoload_static.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <h4 class="phpdocumentor-element__name" id="property_files">
+        $files
+        <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_files" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$prefixDirsPsr4</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;Sources\\&#039; =&gt; array(0 =&gt; __DIR__ . &#039;/../..&#039; . &#039;/tests&#039;), &#039;Outils\\&#039; =&gt; array(0 =&gt; __DIR__ . &#039;/../..&#039; . &#039;/resources/Outils&#039;), &#039;Modeles\\&#039; =&gt; array(0 =&gt; __DIR__ . &#039;/../..&#039; . &#039;/src/Modeles&#039;), &#039;App\\&#039; =&gt; array(0 =&gt; __DIR__ . &#039;/../..&#039; . &#039;/src&#039;))</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-            -static                                            "
->
-    <h4 class="phpdocumentor-element__name" id="property_prefixLengthsPsr4">
-        $prefixLengthsPsr4
-        <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_prefixLengthsPsr4" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -275,13 +284,77 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$files</span>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;6e3fae29631ef280660b3cdad06f25a8&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/deprecation-contracts/function.php&#039;, &#039;0e6d7bf4a5811bfa5cf40c5ccd6fae6a&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/polyfill-mbstring/bootstrap.php&#039;, &#039;667aeda72477189d0494fecd327c3641&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper/Resources/functions/dump.php&#039;, &#039;0e423a14e27410a071e5d815d3ffc856&#039; =&gt; __DIR__ . &#039;/..&#039; . &#039;/larapack/dd/src/helper.php&#039;)</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_prefixDirsPsr4">
+        $prefixDirsPsr4
+        <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_prefixDirsPsr4" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/composer/autoload_static.php"><a href="files/vendor-composer-autoload-static.html"><abbr title="vendor/composer/autoload_static.php">autoload_static.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$prefixDirsPsr4</span>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;Symfony\\Polyfill\\Mbstring\\&#039; =&gt; array(0 =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/polyfill-mbstring&#039;), &#039;Symfony\\Component\\VarDumper\\&#039; =&gt; array(0 =&gt; __DIR__ . &#039;/..&#039; . &#039;/symfony/var-dumper&#039;), &#039;Sources\\&#039; =&gt; array(0 =&gt; __DIR__ . &#039;/../..&#039; . &#039;/tests&#039;), &#039;Outils\\&#039; =&gt; array(0 =&gt; __DIR__ . &#039;/../..&#039; . &#039;/resources/Outils&#039;), &#039;Modeles\\&#039; =&gt; array(0 =&gt; __DIR__ . &#039;/../..&#039; . &#039;/src/Modeles&#039;), &#039;App\\&#039; =&gt; array(0 =&gt; __DIR__ . &#039;/../..&#039; . &#039;/src&#039;))</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_prefixLengthsPsr4">
+        $prefixLengthsPsr4
+        <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_prefixLengthsPsr4" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/composer/autoload_static.php"><a href="files/vendor-composer-autoload-static.html"><abbr title="vendor/composer/autoload_static.php">autoload_static.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$prefixLengthsPsr4</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;S&#039; =&gt; array(&#039;Sources\\&#039; =&gt; 8), &#039;O&#039; =&gt; array(&#039;Outils\\&#039; =&gt; 7), &#039;M&#039; =&gt; array(&#039;Modeles\\&#039; =&gt; 8), &#039;A&#039; =&gt; array(&#039;App\\&#039; =&gt; 4))</span></code>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;S&#039; =&gt; array(&#039;Symfony\\Polyfill\\Mbstring\\&#039; =&gt; 26, &#039;Symfony\\Component\\VarDumper\\&#039; =&gt; 28, &#039;Sources\\&#039; =&gt; 8), &#039;O&#039; =&gt; array(&#039;Outils\\&#039; =&gt; 7), &#039;M&#039; =&gt; array(&#039;Modeles\\&#039; =&gt; 8), &#039;A&#039; =&gt; array(&#039;App\\&#039; =&gt; 4))</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -291,6 +364,7 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -301,11 +375,12 @@
     <h4 class="phpdocumentor-element__name" id="method_getInitializer">
         getInitializer()
         <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#method_getInitializer" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="vendor/composer/autoload_static.php"><a href="files/vendor-composer-autoload-static.html"><abbr title="vendor/composer/autoload_static.php">autoload_static.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -314,8 +389,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getInitializer</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Composer-Autoload-ClassLoader.html"><abbr title="\Composer\Autoload\ClassLoader">ClassLoader</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loader</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -323,85 +399,146 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Composer-Autoload-ClassLoader.html"><abbr title="\Composer\Autoload\ClassLoader">ClassLoader</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/vendor/composer/autoload_static.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_classMap">$classMap<a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html"></li>
+                                                    <li><a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_files">$files<a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html"></li>
+                                                    <li><a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_prefixDirsPsr4">$prefixDirsPsr4<a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html"></li>
+                                                    <li><a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#property_prefixLengthsPsr4">$prefixLengthsPsr4<a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#method_getInitializer">getInitializer()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -412,7 +549,6 @@
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Composer-Autoload-ComposerStaticInitb61b79819ae9165507c7f3b1ebfa76b0.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

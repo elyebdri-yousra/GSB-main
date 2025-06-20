@@ -17,16 +17,18 @@
  */
 
 $moisDebut = '202209';
-require './fonctions.php';
+require '/Users/baptisteerades/Desktop/GitHub/gsb-bts/bin/gendatas/fonctions.php';
 
-$pdo = new PDO('mysql:host=localhost;dbname=gsb_frais', 'userGsb', 'secret');
+$pdo = new PDO('mysql:host=127.0.0.1;dbname=gsb_frais', 'userGsb', 'secret');
 $pdo->query('SET CHARACTER SET utf8');
 
 set_time_limit(0);
-creationFichesFrais($pdo);
+updatePassword($pdo);
+/*creationFichesFrais($pdo);
 creationFraisForfait($pdo);
 creationFraisHorsForfait($pdo);
 majFicheFrais($pdo);
 echo getNbTable($pdo, 'fichefrais') . " fiches de frais créées !\n";
 echo getNbTable($pdo, 'lignefraisforfait') . " lignes de frais au forfait créées !\n";
 echo getNbTable($pdo, 'lignefraishorsforfait') . " lignes de frais hors forfait créées !\n";
+*/
